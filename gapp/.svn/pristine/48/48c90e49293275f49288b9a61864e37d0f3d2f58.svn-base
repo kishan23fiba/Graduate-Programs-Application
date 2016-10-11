@@ -1,0 +1,83 @@
+package springmvc.model;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import springmvc.model.Department;
+@Entity
+@Table(name="programs")
+public class Programs {
+
+	@Id
+	private Integer id;
+	
+	private String pname;
+	
+	@ManyToOne
+	private Department department;
+	
+	@OneToMany(mappedBy="prog")
+	private List<Application> app;
+	
+	public Programs() {
+		super();
+	}
+	
+	
+
+	public Programs(Integer id, String pname, Department department,
+			List<Application> app) {
+		super();
+		this.id = id;
+		this.pname = pname;
+		this.department = department;
+		this.app = app;
+	}
+
+
+
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getPname() {
+		return pname;
+	}
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+
+
+	public Department getDepartment() {
+		return department;
+	}
+
+
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+
+
+	public List<Application> getApp() {
+		return app;
+	}
+
+
+
+	public void setApp(List<Application> app) {
+		this.app = app;
+	}
+
+		
+	
+}

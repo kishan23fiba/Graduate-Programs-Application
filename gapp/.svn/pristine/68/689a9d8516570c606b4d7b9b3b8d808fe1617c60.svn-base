@@ -1,0 +1,22 @@
+package springmvc.model.dao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
+import org.testng.annotations.Test;
+
+@Test(groups = "DepartmentDaoTest")
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+
+public class AccountingApplicationDaoTest extends AbstractTransactionalTestNGSpringContextTests {
+	@Autowired
+	AccountingApplicationDao accountingApplicationDao;
+	
+	@Test
+    public void getApplications()
+    {
+        //accountingApplicationDao.getApplications().get(2).getId()
+		//assert accountingApplicationDao.getApplications().get(0).getProg().getDepartment().getDname().equals("Accounting");
+		assert accountingApplicationDao.getApplications().size()==1;
+    }
+
+}

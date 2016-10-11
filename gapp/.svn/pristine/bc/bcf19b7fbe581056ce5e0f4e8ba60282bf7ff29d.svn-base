@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7281" started-at="2016-01-31T23:01:22Z" finished-at="2016-01-31T23:01:29Z">
+    <groups>
+      <group name="DepartmentDaoTest">
+        <method signature="Student1DaoTest.getApplication()[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" name="getApplication" class="springmvc.model.dao.Student1DaoTest"/>
+      </group> <!-- DepartmentDaoTest -->
+    </groups>
+    <test name="Default test" duration-ms="7281" started-at="2016-01-31T23:01:22Z" finished-at="2016-01-31T23:01:29Z">
+      <class name="springmvc.model.dao.Student1DaoTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" test-instance-name="" name="springTestContextBeforeTestClass" is-config="true" duration-ms="63" started-at="2016-01-31T15:01:22Z" finished-at="2016-01-31T15:01:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method name="springTestContextPrepareTestInstance" test-instance-name="" signature="springTestContextPrepareTestInstance()[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" is-config="true" status="PASS" duration-ms="6404" finished-at="2016-01-31T15:01:29Z" started-at="2016-01-31T15:01:22Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" test-instance-name="" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="219" started-at="2016-01-31T15:01:29Z" finished-at="2016-01-31T15:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void springmvc.model.dao.Student1DaoTest.getApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getApplication()[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" test-instance-name="" name="getApplication" duration-ms="521" started-at="2016-01-31T15:01:29Z" finished-at="2016-01-31T15:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApplication -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" test-instance-name="" name="springTestContextAfterTestMethod" is-config="true" duration-ms="24" started-at="2016-01-31T15:01:29Z" finished-at="2016-01-31T15:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void springmvc.model.dao.Student1DaoTest.getApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:springmvc.model.dao.Student1DaoTest@2b7639c8]" test-instance-name="" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2016-01-31T15:01:29Z" finished-at="2016-01-31T15:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- springmvc.model.dao.Student1DaoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

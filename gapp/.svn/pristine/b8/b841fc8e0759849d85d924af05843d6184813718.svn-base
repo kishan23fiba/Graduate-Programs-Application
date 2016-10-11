@@ -1,0 +1,22 @@
+package springmvc.model.dao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
+import org.testng.annotations.Test;
+
+@Test(groups = "DepartmentDaoTest")
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+
+public class Student1DaoTest extends AbstractTransactionalTestNGSpringContextTests {
+
+	@Autowired
+	Student1Dao student1Dao;
+	
+	@Test
+    public void getApplication()
+    {
+        assert student1Dao.getApplications().size()==1;
+		assert student1Dao.getApplications().get(0).getStudent().getUsers().getEmail().equals("student1@localhost.localdomain");
+		//assert student1Dao.getApplications().size()==1;
+    }
+}

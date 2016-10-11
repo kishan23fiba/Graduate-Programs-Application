@@ -1,0 +1,56 @@
+INSERT INTO users(
+            id, email, fname, lname, password, role)
+    VALUES (1, 'admin@localhost.localdomain', 'John', 'Doe', 'abcd', 'administrator');
+
+INSERT INTO users(
+            id, email, fname, lname, password, role)
+    VALUES (2, 'staff1@localhost.localdomain', 'Joe', 'Barnes', 'abcd', 'staff');
+
+INSERT INTO users(
+            id, email, fname, lname, password, role)
+    VALUES (3, 'staff2@localhost.localdomain', 'Stacy', 'McGuire', 'abcd', 'staff');
+
+
+INSERT INTO users(
+            id, email, fname, lname, password, role)
+    VALUES (4, 'student1@localhost.localdomain', 'Kishan', 'Mistry', 'abcd', 'student');
+
+INSERT INTO users(
+            id, email, fname, lname, password, role)
+    VALUES (5, 'student2@localhost.localdomain', 'Tom', 'Riddle', 'abcd', 'student');
+
+INSERT INTO department(
+            dno, dname)
+    VALUES (1, 'Accounting');
+
+INSERT INTO department(
+            dno, dname)
+    VALUES (2, 'Computer Science');
+
+INSERT INTO programs(
+            id, pname, department_dno)
+    VALUES (1, 'MS in Accounting', 1);
+
+INSERT INTO programs(
+            id, pname, department_dno)
+    VALUES (2, 'MS in Computer Science', 2);
+
+INSERT INTO additionalinfo(
+            id, name, required, type, department_dno)
+    VALUES (1, 'GMAT', true, 'number', 1);
+
+INSERT INTO status(
+            id, comments, lastupdated, name)
+    VALUES (1, 'First Application', '01/30/2016', 'New');
+
+INSERT INTO student(
+            id, cin, citizenship, dob, email, fname, gender, lname, phone, 
+            users_id)
+    VALUES (201, '304398684', 'indian', '08/23/1992', 'student1@localhost.localdomain', 'Kishan', 'male', 'Mistry', '6267805117', 
+            '4');
+
+INSERT INTO application(
+            id, term, prog_id, status_id, student_id)
+    VALUES (101, 'Fall 2016', 1, 1, 201);
+
+
